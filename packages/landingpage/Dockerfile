@@ -9,6 +9,9 @@ WORKDIR /usr/src/app
 # Copying source files
 COPY . /usr/src/app
 
+RUN pwd
+RUN ls -al
+
 # Installing dependencies
 COPY package.json /usr/src/app/
 RUN npm install
