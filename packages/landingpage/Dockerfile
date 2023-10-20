@@ -13,7 +13,7 @@ RUN pwd
 RUN ls -al
 
 # Installing dependencies
-COPY package.json /usr/src/app/
+COPY ./packages/landingpage/package.json /usr/src/app/
 RUN npm install
 
 # Building app
